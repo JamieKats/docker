@@ -1,0 +1,64 @@
+# sudo docker compose up -d
+#
+# To connect to postgres instance from host:
+#   psql -U postgres -h <host ip>
+
+# From grafana docker docs
+#Note: Though both methods are similar, there is a slight difference. 
+#If you want your storage to be fully managed by Docker and accessed 
+#only through Docker containers and the Docker CLI, you should choose 
+#to use persistent storage. However, if you need full control of 
+#the storage and want to allow other processes besides Docker to access
+# or modify the storage layer, then bind mounts is the right choice for
+# your environment.
+
+version: "3.8"
+
+services:
+  # db:
+  #   image: postgres:14.9
+  #   restart: always
+  #   environment:
+  #     POSTGRES_PASSWORD: password
+  #   ports:
+  #     - '5432:5432'
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+
+  # timescaledb:
+  #   image: timescale/timescaledb-ha:pg14-latest
+  #   restart: always
+  #   environment:
+  #     POSTGRES_PASSWORD: password
+  #   ports:
+  #     - '5432:5432'
+  #   volumes:
+  #     - timescale-data:/home/postgres/pgdata/data
+
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: always
+    user: '0'
+    ports:
+      - '3000:3000'
+    volumes:
+      # - grafana-data:/var/lib/grafana
+      - './grafana-storage:/var/lib/grafana'
+      # - type: bind
+      #   source: ./grafana-storage
+      #   target: /var/lib/grafana
+
+    
+
+
+
+volumes:
+  postgres-data:
+  timescale-data:
+  grafana-data:
+    # driver: local
+    # external: true
+    # driver_opts:
+      # o: 'bind'
+      # device: 
