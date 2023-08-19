@@ -39,12 +39,12 @@ services:
     image: grafana/grafana-enterprise
     container_name: grafana
     restart: always
-    user: '0'
+    user: '0' # necessary is using bing mounts for persistance
     ports:
       - '3000:3000'
     volumes:
-      # - grafana-data:/var/lib/grafana
-      - './grafana-storage:/var/lib/grafana'
+      # - grafana-data:/var/lib/grafana # using docker volume
+      - './grafana-mount:/var/lib/grafana' # using bind mount
       # - type: bind
       #   source: ./grafana-storage
       #   target: /var/lib/grafana
