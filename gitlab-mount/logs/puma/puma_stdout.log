@@ -1,5 +1,0 @@
-=== puma startup: 2023-08-20 06:47:48 +0000 ===
-{"timestamp":"2023-08-20T06:47:49.395Z","pid":785,"message":"- Worker 2 (PID: 978) booted in 0.46s, phase: 0"}
-{"timestamp":"2023-08-20T06:47:49.463Z","pid":785,"message":"- Worker 3 (PID: 980) booted in 0.52s, phase: 0"}
-{"timestamp":"2023-08-20T06:47:49.592Z","pid":785,"message":"- Worker 1 (PID: 976) booted in 0.67s, phase: 0"}
-{"timestamp":"2023-08-20T06:47:49.641Z","pid":785,"message":"- Worker 0 (PID: 974) booted in 0.73s, phase: 0"}
