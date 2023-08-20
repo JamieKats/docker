@@ -15,8 +15,9 @@
 version: "3.8"
 
 services:
-  # db:
+  # postgresql:
   #   image: postgres:14.9
+  #   container_name: postgresql
   #   restart: always
   #   environment:
   #     POSTGRES_PASSWORD: password
@@ -27,6 +28,7 @@ services:
 
   # timescaledb:
   #   image: timescale/timescaledb-ha:pg14-latest
+  #   container_name: timescaledb
   #   restart: always
   #   environment:
   #     POSTGRES_PASSWORD: password
@@ -35,19 +37,43 @@ services:
   #   volumes:
   #     - timescale-data:/home/postgres/pgdata/data
 
-  grafana:
-    image: grafana/grafana-enterprise
-    container_name: grafana
+  # grafana:
+  #   image: grafana/grafana-enterprise
+  #   container_name: grafana
+  #   restart: always
+  #   user: '0' # necessary is using bing mounts for persistance
+  #   ports:
+  #     - '3000:3000'
+  #   volumes:
+  #     # - grafana-data:/var/lib/grafana # using docker volume
+  #     - './grafana-mount:/var/lib/grafana' # using bind mount
+
+  # gitlab:
+  #   image: 'gitlab/gitlab-ce:latest'
+  #   container_name: gitlab
+  #   restart: always
+  #   hostname: 'gitlab-test.com'
+  #   # environment:
+  #   # https://stackoverflow.com/questions/70139731/docker-compose-yml-with-gitlab-omnibus-config-not-working
+  #   # GITLAB_OMNIBUS_CONFIG: |
+  #   #     external_url 'http://gitlab-test.com'
+  #   ports:
+  #     - '8080:80'
+  #     - '4433:443'
+  #     - '2222:22'
+  #   volumes:
+  #     - '/home/jamie/Desktop/docker/gitlab-mount/config:/etc/gitlab'
+  #     - '/home/jamie/Desktop/docker/gitlab-mount/logs:/var/log/gitlab'
+  #     - '/home/jamie/Desktop/docker/gitlab-mount/app-data:/var/opt/gitlab'
+
+  vernemq:
+    image: vernemq/vernemq
+    container_name: vernemq
     restart: always
-    user: '0' # necessary is using bing mounts for persistance
+    environment:
+      - DOCKER_VERNEMQ_ACCEPT_EULA=yes
     ports:
-      - '3000:3000'
-    volumes:
-      # - grafana-data:/var/lib/grafana # using docker volume
-      - './grafana-mount:/var/lib/grafana' # using bind mount
-      # - type: bind
-      #   source: ./grafana-storage
-      #   target: /var/lib/grafana
+      - '1883:1883'
 
     
 

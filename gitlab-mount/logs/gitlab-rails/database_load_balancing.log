@@ -1,0 +1,27 @@
+# Logfile created on 2023-08-20 06:46:33 +0000 by logger.rb/v1.4.3
+{"severity":"DEBUG","time":"2023-08-20T06:46:33.641Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:46:33.642Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:46:33.642Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:46:33.643Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:02.689Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:02.690Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:02.690Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:02.691Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:27.001Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:27.003Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:35.955Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:35.959Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:35.967Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:47:35.976Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.392Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.394Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.461Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.462Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.590Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.591Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.638Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:47:49.640Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:48:22.659Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:48:22.675Z","correlation_id":null,"event":"setup","model":"ActiveRecord::Base","start_service_discovery":true}
+{"severity":"DEBUG","time":"2023-08-20T06:48:22.676Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":false}
+{"severity":"DEBUG","time":"2023-08-20T06:48:22.677Z","correlation_id":null,"event":"setup","model":"Ci::ApplicationRecord","start_service_discovery":true}
